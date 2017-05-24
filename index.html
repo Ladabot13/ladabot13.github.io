@@ -1,5 +1,122 @@
-<html>
-	<body>
-		Hello!
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nicki's Page</title>
+<link href="style.css" type="text/css" rel="stylesheet">
+<link href="style_nav.css" type="text/css" rel="stylesheet">
+<link href="images/logo/logo_small.png" rel="shortcut icon" type"image/x-icon">
+<meta content="Corporate and Private Event Planning by Nicki Mesenburg" itemprop="description">
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body id="site" screen_capture_injected="true">
+
+	<div class="nav-bar">
+		<div id="logo"><img src="images/logo/logo_full_pink.png"/></div>
+		
+		<div id="nav">
+			<ul class="s-nav">
+
+			<li><a class="s-nav-item selected" href="#home"><span class="s-font-body">Home</span></a></li>
+			<li><a class="s-nav-item selected" href="#services"><span class="s-font-body">Services</span></a></li>
+			<li><a class="s-nav-item selected" href="#my-work"><span class="s-font-body">My Work</span></a></li>
+			<li><a class="s-nav-item selected" href="#gallery"><span class="s-font-body">Gallery</span></a></li>
+			<li><a class="s-nav-item selected" href="#contact"><span class="s-font-body">Contact</span></a></li>
+
+			</ul>
+		</div> 
+	</div>
+
+	<div class="services-container">
+		<div id="services-header">
+			<h1>Services</h1>
+		</div>
+		<div class="services">
+			<div id="item"><img src="images/services/wedding_circle.png"/>
+				<div id="services-copy">
+				<h2>Weddings</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</div>
+			<div id="item"><img src="images/services/corp_circle.png"/>
+				<div id="services-copy">
+				<h2>Corporate Events</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</div>
+			<div id="item"><img src="images/services/kids_circle.png"/>
+				<div id="services-copy">
+				<h2>Kid's Parties</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="my-work-container" id="my-work">
+		<div id="my-work-header">
+		 <h1>My Work</h1>
+		</div>
+		<div class="column" id="LB">
+		  <h1>Left Bank Brassarie & LB Steak</h1>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="column" id="CC">
+		  <h1>California Cafe</h1>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="column" id="PE">
+		  <h1>Private Endeavors</h1>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</div>
+
+	<!--<div class="gallery">
+		<div id="gallery-header">
+		 <h3>Gallery</h3>
+		</div>
+		<div class="picture"><img src="images/gallery/one.jpg"/></div>
+		<div class="picture"><img src="images/gallery/two.jpg"/></div>
+		<div class="picture"><img src="images/gallery/three.jpg"/></div>
+		<div class="picture"><img src="images/gallery/four.jpg"/></div>
+		<div class="picture"><img src="images/gallery/five.jpg"/></div>
+		<div class="picture"><img src="images/gallery/six.jpg"/></div>
+		<div class="picture"><img src="images/gallery/seven.jpg"/></div>
+		<div class="picture"><img src="images/gallery/eight.jpg"/></div>
+		<div class="picture"><img src="images/gallery/nine.jpg"/></div>
+	</div>-->
+
+
+
+
+<!-- ////////   SCRIPTS   //////// -->
+
+<script src="jquery.sticky.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#nav").sticky({topSpacing:0});
+  });
+</script> 
+<script>
+  $(document).ready(function(){
+	$(function() {
+	  initHoverBoxes();
+	});
+	function initHoverBoxes() {
+	  var $column = $(".column");
+
+	  $column.mouseenter(function() {
+	    $column.removeClass("wide");
+	    $column.css("width", "25%");
+	    $(this).addClass("wide");
+	  });
+
+	  $column.mouseleave(function() {
+	    $column.css("width", "33%");
+	    $column.removeClass("wide");
+	  });
+	}
+	});
+</script> 
+</body>
 </html>
