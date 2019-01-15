@@ -5,7 +5,10 @@
 <title>Nicki's Page</title>
 <link href="style.css" type="text/css" rel="stylesheet">
 <link href="style_nav.css" type="text/css" rel="stylesheet">
+<link href="gallery_style.css" type="text/css" rel="stylesheet">
+<link href="contact_style.css" type="text/css" rel="stylesheet">
 <link href="images/logo/logo_small.png" rel="shortcut icon" type"image/x-icon">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <meta content="Corporate and Private Event Planning by Nicki Mesenburg" itemprop="description">
 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
@@ -19,14 +22,15 @@
 
 			<li><a class="s-nav-item selected" href="#home"><span class="s-font-body">Home</span></a></li>
 			<li><a class="s-nav-item selected" href="#services"><span class="s-font-body">Services</span></a></li>
-			<li><a class="s-nav-item selected" href="#my-work"><span class="s-font-body">My Work</span></a></li>
 			<li><a class="s-nav-item selected" href="#gallery"><span class="s-font-body">Gallery</span></a></li>
+			<li><a class="s-nav-item selected" href="#my-work"><span class="s-font-body">My Work</span></a></li>
 			<li><a class="s-nav-item selected" href="#contact"><span class="s-font-body">Contact</span></a></li>
 
 			</ul>
 		</div> 
 	</div>
 
+<div id="services" class="anchor">
 	<div class="services-container">
 		<div id="services-header">
 			<h1>Services</h1>
@@ -52,51 +56,119 @@
 			</div>
 		</div>
 	</div>
+</div>
 
-	<div class="my-work-container" id="my-work">
-		<div id="my-work-header">
-		 <h1>My Work</h1>
-		</div>
+<div id="gallery" class="anchor">
+   	<img id="pop-up" src="">
+	<div id="gallery-header">
+		<h1>Gallery</h1>
+	</div>
+	<div class='gallery-container'>
+	    <div class="image-container"><img src='images/gallery/one.jpg'/></div>
+	    <div class="image-container"><img src='images/gallery/two.jpg'/></div>
+	    <div class="image-container"><img src='images/gallery/three.jpg'/></div>
+	    <div class="image-container"><img src='images/gallery/four.jpg'/></div>
+	    <div class="image-container"><img src='images/gallery/five.jpg'/></div>
+	    <div class="image-container"><img src='images/gallery/six.jpg'/></div>
+	    <div class="image-container"><img src='images/gallery/seven.jpg'/></div>
+	    <div class="image-container"><img src='images/gallery/eight.jpg'/></div>
+	    <div class="image-container"><img src='images/gallery/nine.jpg'/></div>
+	 </div>
+</div>
+
+	
+<div id="my-work" class="anchor">
+	<div class="my-work-container">
+	<div id="my-work-header">
+	 	<h1>My Work</h1>
+	</div>
 		<div class="column" id="LB">
-		  <h1>Left Bank Brassarie & LB Steak</h1>
-		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		    <h1>Left Bank Brassarie & LB Steak</h1>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		</div>
 		<div class="column" id="CC">
-		  <h1>California Cafe</h1>
-		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		    <h1>California Cafe</h1>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		</div>
 		<div class="column" id="PE">
-		  <h1>Private Endeavors</h1>
-		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		    <h1>Private Endeavors</h1>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="column" id="BV">
+		    <h1>Bella Vista</h1>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		</div>
 	</div>
+</div>
 
-	<!--<div class="gallery">
-		<div id="gallery-header">
-		 <h3>Gallery</h3>
-		</div>
-		<div class="picture"><img src="images/gallery/one.jpg"/></div>
-		<div class="picture"><img src="images/gallery/two.jpg"/></div>
-		<div class="picture"><img src="images/gallery/three.jpg"/></div>
-		<div class="picture"><img src="images/gallery/four.jpg"/></div>
-		<div class="picture"><img src="images/gallery/five.jpg"/></div>
-		<div class="picture"><img src="images/gallery/six.jpg"/></div>
-		<div class="picture"><img src="images/gallery/seven.jpg"/></div>
-		<div class="picture"><img src="images/gallery/eight.jpg"/></div>
-		<div class="picture"><img src="images/gallery/nine.jpg"/></div>
-	</div>-->
+<form id="ajax-contact" method="post" action="https://eventsbynicki.com/test.php">
+    <div class="field">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
 
+    <div class="field">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
 
+    <div class="field">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+    </div>
 
+    <div class="field">
+        <button type="submit">Send</button>
+    </div>
+</form>
+
+<!--div id="contact" class="anchor">
+	<div id="contact-header">
+	 	<h1>Contact Me</h1>
+	</div>
+	<div class="contact-container">
+	  <div id="contact_form">
+
+	    <label for="name">Full Name:</label>  
+	    <input type="text" name="name" id="sendName" />
+	    
+	    <label for="email">Email:</label>
+	    <input type"text" name="email" id="sendEmail" />
+
+	    <br />
+	    <br />
+
+	    <label for="date">Date:</label>
+	    <input type="text" name="date" id="date" />
+
+	    <label for="subject">Subject:</label>
+	    <input type"text" name="subject" id="subject" />
+
+	    <label for="message">Message:</label>
+	    <input type"text" name="message" id="message" />
+
+	    <label for="phone">Phone:</label>
+	    <input type"text" name="phone" id="phone" />
+
+	  </div>
+
+	      <div id="submit">Submit</div>
+</div>
+</div-->
 
 <!-- ////////   SCRIPTS   //////// -->
 
 <script src="jquery.sticky.js"></script>
+<script src="app.js"></script>
+
 <script>
   $(document).ready(function(){
     $("#nav").sticky({topSpacing:0});
   });
 </script> 
+
+<!--   WORK COLUMNS    -->
+
 <script>
   $(document).ready(function(){
 	$(function() {
@@ -107,16 +179,182 @@
 
 	  $column.mouseenter(function() {
 	    $column.removeClass("wide");
-	    $column.css("width", "25%");
+	    $column.css("width", "16%");
 	    $(this).addClass("wide");
 	  });
 
 	  $column.mouseleave(function() {
-	    $column.css("width", "33%");
+	    $column.css("width", "25%");
 	    $column.removeClass("wide");
 	  });
 	}
 	});
 </script> 
+
+<!--   GALLERY OPACITY ANIMATION    -->
+
+<script>
+$(".gallery-container img").hover(function() { // Mouse over
+	  $(this).siblings().stop().fadeTo(300, 0.6);
+	  $(this).parent().siblings().stop().fadeTo(300, 0.6); 
+	}, function() { // Mouse out
+	  $(this).siblings().stop().fadeTo(300, 1);
+	  $(this).parent().siblings().stop().fadeTo(300, 1);
+});
+</script>
+
+<!--   PHOTO POP-UP    -->
+
+<script>
+$('.gallery-container .image-container').click(function photoPop() {
+
+   var docHeight = $(document).height();
+
+   $("body").append("<div id='overlay'><img id='pop-up'/><p id='close'>|  close  |</p></div>");
+
+   	var img_src = $(this).find('img').attr('src');
+	document.getElementById("pop-up").setAttribute('src', img_src);
+
+	var div_width = document.getElementById("pop-up").width;
+	var width = (div_width / 2) * -1;
+	var div_height = document.getElementById("pop-up").height;
+	var height = (div_height / 2) * -1;
+	$("#pop-up").css('margin', height +'px 0 0' + width + 'px');
+
+	var offsets = document.getElementById('pop-up').getBoundingClientRect();
+	var top = offsets.top - 25;
+	var left = offsets.left;
+	$('#close').css('margin', top + 'px 0px 0px ' + left + 'px');
+
+	$('#close').show();
+
+   	$("#overlay")
+      .height(docHeight)
+      .css({
+         'opacity' : 0.6,
+         'position': 'absolute',
+         'top': 0,
+         'left': 0,
+         'background-color': 'black',
+         'width': '100%',
+         'z-index': 5000,
+         'cursor' :' pointer'
+      });
+
+$('#close, #overlay').click(function(){
+	$('#overlay').remove();
+	$('#close').hide()
+	document.getElementById("pop-up").removeAttribute('src');
+})
+
+});
+
+$(window).resize(function(){
+
+	var div_width = document.getElementById("pop-up").width;
+	var width = (div_width / 2) * -1;
+	var div_height = document.getElementById("pop-up").height;
+	var height = (div_height / 2) * -1;
+	$("#pop-up").css('margin', height +'px 0 0' + width + 'px');
+
+	var offsets = document.getElementById('pop-up').getBoundingClientRect();
+	var top = offsets.top - 25;
+	var left = offsets.left;
+	$('#close').css('margin', top + 'px 0px 0px ' + left + 'px');
+
+})
+</script>
+
+<!--   INFORMATION SUBMITION    -->
+
+  <!--script type="text/javascript">
+
+    $(document).ready(function() {
+
+        $('#submit').click(function(){
+            var name = $('#sendName').val();
+            var email = $('#sendEmail').val();
+            var date = $('#date').val();
+            var subject = $('#subject').val();
+            var message = $('#message').val();
+            var phone = $('#phone').val();
+
+            var varData = 'name=' + name + '&email=' + email;
+            console.log(varData);
+
+            $.ajax ({
+              type: 'POST',
+              url: 'php.php',
+              data: varData,
+              success: function(){
+                  alert("Sent");
+              }
+            });
+        });
+    });
+
+  </script-->
+
+  <script type="text/javascript">
+
+$(function() {
+
+    // Get the form.
+    var form = $('#ajax-contact');
+
+    // Get the messages div.
+    var formMessages = $('#form-messages');
+
+    // Set up an event listener for the contact form.
+	$(form).submit(function(event) {
+    
+	    // Stop the browser from submitting the form.
+	    event.preventDefault();
+
+	    // Serialize the form data.
+		var formData = $(form).serialize();
+// Submit the form using AJAX.
+	$.ajax({
+	    type: 'POST',
+	    url: $(form).attr('action'),
+	    data: formData
+	})
+
+	.done(function(response) {
+
+	    // Make sure that the formMessages div has the 'success' class.
+	    $(formMessages).removeClass('error');
+	    $(formMessages).addClass('success');
+
+	    // Set the message text.
+	    $(formMessages).text(response);
+	    console.log('sent');
+
+	    // Clear the form.
+	    $('#name').val('');
+	    $('#email').val('');
+	    $('#message').val('');
+	})
+
+	.fail(function(data) {
+
+	    // Make sure that the formMessages div has the 'error' class.
+	    $(formMessages).removeClass('success');
+	    $(formMessages).addClass('error');
+
+	    // Set the message text.
+	    if (data.responseText !== '') {
+	        $(formMessages).text(data.responseText);
+	    } else {
+	        $(formMessages).text('Oops! An error occured and your message could not be sent.');
+	    }
+	});
+	});
+
+	
+
+});
+  </script>
+
 </body>
 </html>
