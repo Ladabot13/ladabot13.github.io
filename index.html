@@ -101,60 +101,74 @@
 	</div>
 </div>
 
-<form id="ajax-contact" method="post" action="http://eventsbynicki.com/form.php">
-    <div class="field">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-    </div>
+<div class="container">
 
-    <div class="field">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-    </div>
 
-    <div class="field">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-    </div>
 
-    <div class="field">
-        <button type="submit">Send</button>
-    </div>
-</form>
+<div class="challenge_bin">
+  <p>Challenge a fellow employee to a round!</p>
+  <div id="challenge_form">
 
-<!--div id="contact" class="anchor">
-	<div id="contact-header">
-	 	<h1>Contact Me</h1>
-	</div>
-	<div class="contact-container">
-	  <div id="contact_form">
+    <label for="name">Your Name:</label>  
+    <input type="text" name="name" id="sendName" />
+    
+    <label for="email">Your Email:</label>
+    <input type"text" name="email" id="sendEmail" />
 
-	    <label for="name">Full Name:</label>  
-	    <input type="text" name="name" id="sendName" />
-	    
-	    <label for="email">Email:</label>
-	    <input type"text" name="email" id="sendEmail" />
+    <br />
+    <br />
 
-	    <br />
-	    <br />
+    <label for="name">Opponent's Name:</label>
+    <input type="text" name="name" id="receiveName" />
 
-	    <label for="date">Date:</label>
-	    <input type="text" name="date" id="date" />
+    <label for="email">Opponent's Email:</label>
+    <input type"text" name="email" id="receiveEmail" />
 
-	    <label for="subject">Subject:</label>
-	    <input type"text" name="subject" id="subject" />
+  </div>
 
-	    <label for="message">Message:</label>
-	    <input type"text" name="message" id="message" />
+      <div id="challenge_submit">Submit</div>
 
-	    <label for="phone">Phone:</label>
-	    <input type"text" name="phone" id="phone" />
-
-	  </div>
-
-	      <div id="submit">Submit</div>
 </div>
-</div-->
+
+</div>
+
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+
+        $('#challenge_submit').click(function(){
+            var name = $('#receiveName').val();
+            var email = $('#receiveEmail').val();
+
+            var varData = 'name=' + name + '&email=' + email;
+            console.log(varData);
+
+            $.ajax ({
+              type: 'POST',
+              url: 'php.php',
+              data: varData,
+              success: function(){
+                  alert("Sent");
+              }
+            });
+        });
+    });
+
+    $(document).ready(function(){
+      $('.new_score_btn').click(function(){
+        $('.new_score').show();
+        $('.black_overlay').show();
+      });
+      $('#players_submit').click(function(){
+        $('.new_score').hide();
+        $('.black_overlay').hide();
+      });
+
+    });
+
+
+
+  </script>
 
 <!-- ////////   SCRIPTS   //////// -->
 
