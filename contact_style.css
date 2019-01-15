@@ -1,12 +1,160 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#site {
+  min-width: 780px;
+}
+html, body {
+  height: 100%;
+  width: 100%; 
+  margin:0px;
+  padding: 0px;
+}
+
+.anchor {
+  padding-top: 100px;
+}
+
+@font-face {
+  font-family: 'Didot Bold';
+  src: url('fonts/DidotLTStd-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Didot Headline';
+  src: url('fonts/DidotLTStd-Headline.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Didot Roman';
+  src: url('fonts/DidotLTStd-Roman.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Bauer';
+  src: url('fonts/BauerBodoni.otf') format('opentype');
+}
+.services-container{
+  width: 100vw;
+}
+#services-header {
+  vertical-align: middle;
+  margin-top: 30px;
+}
+#services-header h1 {
+  color:black;
+  position: relative;
+  padding: 5px;
+  font-weight:100;
+}
+#services-copy h2 {
+  color:black;
+  position: relative;
+  padding: 5px;
+  font-family: 'Didot Roman', serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+.services {
+  overflow: hidden;
+}
+.services #item {
+  float:left;
+  width: 33%;
+  text-align:center;
+}
+.services #item p {
+  color:black;
+  padding: 20px;
+  font-family: 'Open Sans', serif;
+}
+.services #item img {
+  transform:scale(0.6);
+  -webkit-transform:scale(0.6);
+  -moz-transform:scale(0.6);
+  -o-transform:scale(0.6);
+  max-width:350px;
+  margin-bottom:-50px;
+  margin-top:-50px;
+}
+.my-work-container{
+  width: 100vw;
+  height: 500px;
+}
+#my-work-header {
+  vertical-align: middle;
+  margin-top: 30px;
+}
+#my-work-header h1 {
+  color:black;
+  position: relative;
+  padding: 5px;
+  font-weight:100;
+}
+.column {
+  width: 25%;
+  padding: 2%;
+  height: 500px;
+  float: left;
+  margin: 0;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  z-index: 100;
+}
+.column.wide {
+  width: 50% !important;
+  text-align: center;
+}
+.column#LB {
+  background: url("images/my_work/LB.jpg") no-repeat center;
+  background-size: auto 100% !important;
+}
+.column#CC {
+  background-image: url("images/my_work/CC.JPG");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: auto 100% !important;
+}
+.column#PE {
+  background: url("images/my_work/P.jpg") no-repeat center;
+  background-size: auto 100% !important;
+}
+.column#BV {
+  background: url("images/my_work/BV.jpg") no-repeat center;
+  background-size: auto 100% !important;
+}
+.column:hover p {
+  opacity: 1;
+  animation: fadeInText 1s ease 1 forwards;
+}
+
+.column p {
+  color: #fff;
+  text-align: center;
+  font-family: 'Didot Roman', serif;
+  opacity: 0;
+  padding:50px;
+  background-color:rgba(0,0,0,.5);
+  transition: all 0.5s ease;
+}
+
+h1 {
+  color: #fff;
+  font-size:22px;
+  text-align: center;
+  font-weight: 100;
+  font-family: 'Didot Roman', serif;
+  transition: all 0.5s ease;
+}
+
+
+@keyframes fadeInText {
+  0% {opacity: 0;}
+  50%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
 .container {
-    display: -webkit-flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-   flex-direction: column;
-   -webkit-align-items: center;
+    display: block;
    align-items: center;
    -webkit-justify-content: center;
    justify-content: center;
@@ -14,6 +162,7 @@
    border-radius:5px;
    box-shadow: 0px 0px 5px #888888;
    background-color:#f0f0f0;
+    margin-top: 100px;
 }
 
 .challenge_bin {
@@ -252,4 +401,119 @@ input#winnerName {
 
 
 
+
+.container {
+    display: block;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   
+   border-radius:5px;
+   box-shadow: 0px 0px 5px #888888;
+   background-color:#f0f0f0;
+    margin-top: 100px;
+}
+
+.challenge_bin {
+    width: 300px;
+    width:100%;
+    min-width: 600px;
+    background-color:white;
+    border-radius:5px;
+    text-align: center;
+    max-width: 900px;
+    box-shadow: 0px 2px 3px #888888;
+
+}
+
+.header {
+    width:100%;
+    min-width: 600px;
+    /*background-color:white;*/
+    border-radius:5px;
+    text-align: center;
+    height: 100%;
+}
+
+.counter_bin {
+    width:100%;
+    min-width: 600px;
+    background-color:white;
+    border-radius:5px;
+    text-align: center;
+    box-shadow: 0px 2px 3px #888888;
+    max-width: 900px;
+}
+
+.leader_bin {
+    width:100%;
+    min-width: 600px;
+    background-color:white;
+    border-radius:5px;
+    text-align: center;
+    max-width: 900px;
+    box-shadow: 0px 2px 3px #888888;
+}
+
+p, h1 {
+    font-family: "RakutenBold", sans-serif;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+#logo_green {
+    background-image:url("images/logo_green.png");
+    width: 600px;
+    height: 188px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+
+/*<-------------Countdown------------------->*/
+
+
+
+
+
+
+
+/*<----------------Challenge Box----------------->*/
+
+#challenge_form {
+    box-shadow: inset 0px 2px 5px rgba(0,0,0,.1);
+    background-color: #f0f0f0;
+    padding:10px;
+    border-radius:5px;
+    width: 600px;
+    margin:auto; 
+}
+
+#challenge_submit {
+    border:solid 3px black;
+    width: 60px;
+    padding:4px;
+    margin:  20px auto 20px auto;
+    cursor: pointer;
+    font-family: "RakutenRegular", sans-serif;
+    font-size: 12px;
+
+}
+
+#challenge_submit:hover {
+    border:solid 3px red;
+}
+
+label {
+    font-family: "RakutenRegular", sans-serif;
+    font-size: 13px;
+    padding:10px;
+}
+
+#challenge_form #sendName {
+    box-shadow: inset 2px -1px 6px rgba(0,0,0,0.1);
+}
 
